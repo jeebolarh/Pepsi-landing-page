@@ -1,0 +1,373 @@
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+html{
+    overflow-x: hidden;
+}
+body{
+    position: relative;
+    color: white;
+    background:#070A4E ;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+}
+@media only screen and (max-width:850px) {
+    
+}
+#background-color-white{
+    position: absolute;
+    z-index: -1;
+    background-color: #a5a8e9;
+    border-radius: 50%;
+    filter: blur(2880px);
+    width: 1800px;
+    height: 1800px;
+    bottom: 30%;
+    right: -70%;
+
+}
+header{
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+}
+@media only screen and (max-width:850px) {
+    header{
+        width: 98%;
+        flex-direction: column-reverse;
+    }    
+    
+}
+nav{
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 2;
+    
+    
+}
+
+nav>img{
+    width: 15%;
+    
+}
+@media only screen and (max-width:850px) {
+    nav>img{
+        width: 30%;
+    }    
+    
+}
+nav>div{
+    width: 68%;
+    font-family: 'inter', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: right 0.05s;
+}
+@media only screen and (max-width:850px) {
+    nav>div{
+        position: absolute;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 20px;
+        padding: 10px;
+        top: 0%;
+        right: -500px;
+        background-color: #070A4E;
+        color: black;
+        width: 30%;
+        height:100vh;
+    }    
+    
+}
+@media only screen and (max-width:599px) {
+    nav>div{
+        width: 60%;
+        
+    }    
+    
+}
+nav>div>i{
+    display: none;
+    font-size: 26px;
+
+}
+@media only screen  and (max-width:850px) {
+    nav>div>i{
+        display: block;
+    }    
+    
+}
+nav>i{
+    color: white;
+    font-size: 26px;
+    display: none;
+}
+@media only screen and (max-width:850px) {
+    nav>i{
+        display: block;
+    }    
+    
+}
+nav>div>a{
+    font-size: 1rem;
+}
+@media only screen and (min-width:600px) and (max-width:850px) {
+    
+    
+}
+nav>div>a:hover{
+    color: #212ee2;
+}
+nav>div>a:nth-of-type(1){
+    font-size: 1rem;
+    font-weight: 600;
+}
+nav>div>a:nth-last-of-type(1){
+    
+    font-size: 10px;
+    border: 1px solid white;
+    padding: 10px 30px;
+    border-radius: 50px;
+}
+nav>div>a:nth-last-of-type(1):hover{
+    color: #070A4E;
+    background-color: white;
+}
+header>div:nth-of-type(1){
+    margin-top: 120px;
+    padding-left:3% ;
+    width: 60%;
+    /* height: 100vh; */
+    font-family: 'rubik', sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+@media only screen  and (max-width:850px) {
+    header>div:nth-of-type(1){        
+        width: 100%;
+        padding: 3%;
+    }
+    
+}
+/* Styling of Pepsi Classic */
+header>div:nth-of-type(1)>span:nth-of-type(1){
+    font-weight: 500;
+    font-size: 48px;
+}
+/* styling of the paragraph after Pepsi Classic heading */
+header>div:nth-of-type(1)>span:nth-of-type(2){
+    width: 80%;
+    font-weight: 300;
+    font-size: 16px;
+    text-transform: capitalize;
+    line-height: 18px;
+    margin: 20px 0;  
+}
+@media only screen and (max-width:599px) {
+    header>div:nth-of-type(1)>span:nth-of-type(2){
+        margin-top: 30px;
+        width: 100%;
+        font-size: 16px;
+        text-align: center;
+    }    
+    
+}
+/* styling of NUTRITIONAL FACTS */
+header>div:nth-of-type(1)>span:nth-of-type(3){
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+}
+header>div:nth-of-type(1)>div:nth-of-type(1){
+    display: flex;
+    gap: 10px;
+}
+@media only screen and (max-width:599px) {
+    header>div:nth-of-type(1)>div:nth-of-type(1){
+        flex-wrap: wrap;
+        justify-content: center;
+    }    
+    
+}
+/* the five nutrition fact styling */
+.nutrition-wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 137px;
+    background: #252872;
+    margin: 5px 0;
+    border-radius: 10px;
+}
+@media only screen and (max-width:599px) {
+    .nutrition-wrapper{
+        width: 48%;
+    }    
+    
+}
+.nutrition-wrapper>div:nth-of-type(1){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    
+}
+.nutrition-wrapper>div:nth-of-type(1)>span:nth-of-type(1){
+    font-weight: 400;
+    font-size: 16px;
+    
+}
+.nutrition-wrapper>div:nth-of-type(1)>span:nth-of-type(2){
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 24px;
+}
+.nutrition-wrapper>div:nth-of-type(2){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(100, 102, 147, 1);
+    height: 20%;
+
+}
+/* STYLING OF THE PARAGRAPH AFTER THE NUTRITION FACT */
+header>div:nth-of-type(1)>span:nth-of-type(4){
+    width: 55%;
+    font-weight: 300;
+    font-size: 14px;
+}
+@media only screen and (max-width:599px) {
+    header>div:nth-of-type(1)>span:nth-of-type(4){
+        margin-top: 30px;
+        width: 100%;
+        font-size: 16px;
+        text-align: center;
+    }    
+    
+}
+/* styling of the call to action */
+header>div:nth-of-type(1)>div:nth-of-type(2){
+    margin:50px 0;
+}
+header>div:nth-of-type(1)>div:nth-of-type(2)>a{
+    font-family: 'inter',sans-serif;
+    font-weight: 500;
+    font-size: 10px;
+    padding: 10px 30px;
+    border-radius: 50px;
+    border:1px solid white;
+}
+@media only screen  and (max-width:850px) {
+    
+    header>div:nth-of-type(1)>div:nth-of-type(2)>a{
+        font-size: 20px;
+        
+        
+    }
+    
+}
+header>div:nth-of-type(1)>div:nth-of-type(2)>a:hover{
+    color: #070A4E;
+    background-color: white;
+}
+/* STYLING OF THE SOCIAL ICON WRAPPER */
+header>div:nth-of-type(1)>div:nth-of-type(3){
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+}
+header>div:nth-of-type(1)>div:nth-of-type(2)>a>i{
+    font-size: 30px;
+    
+}
+
+@media only screen  and (max-width:850px) {
+    header>div:nth-of-type(1)>div:nth-of-type(3){        
+        display: none;
+       
+    }
+    header>div:nth-of-type(1)>div:nth-of-type(2)>a{
+        font-size: 25px;
+    }
+    
+    
+}
+header>div:nth-of-type(2){
+    position: relative;
+    width: 40%;
+    
+    
+}
+@media only screen  and (max-width:850px) {
+    header>div:nth-of-type(2){ 
+        margin-top: 40px;       
+        width: 100%;
+        height: 60vh;  
+    }
+    
+}
+header>div:nth-of-type(2)>img:nth-of-type(1){
+    z-index: 1;
+    position: absolute;
+    top: 42%;
+    left: 10%;
+}
+@media only screen  and (max-width:850px) {
+    header>div:nth-of-type(2)>img:nth-of-type(1){       
+        width: 40%;  
+        left:20%;
+        top: 30%;
+    }
+    
+}
+header>div:nth-of-type(2)>img:nth-of-type(2){
+    position: absolute;
+    top: 11%;
+    left: 20%;
+    z-index: 1;
+}
+@media only screen  and (max-width:850px) {
+    header>div:nth-of-type(2)>img:nth-of-type(2){ 
+        width: 80%;      
+        right:30%;
+        bottom: 15%;
+    }
+    
+}
+header>div:nth-of-type(2)>div{
+    position: absolute;
+    top: 80%;
+    left: -53%;
+    width: 0;
+    height: 0;
+    border-top: 60px solid transparent;
+    border-right:660px solid black ;
+    border-bottom: 30px solid transparent ;
+    filter: blur(25px);
+}
+@media only screen  and (max-width:850px) {
+    header>div:nth-of-type(2)>div{
+        top: 90%;
+        right: 35%;
+    }
+    
+}
